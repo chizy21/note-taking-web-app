@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Frontend Mentor | Note-taking web app</title>
+    <meta name="description" content="Note Taking Web App" />
+    <meta name="keywords" content="Note Taking Web App" />
+    <meta name="author" content="Greg Perry" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      if (!('theme-color' in document.createElement('meta'))) {
+        document.querySelector('meta[name="theme-color"]').remove();
+        var meta = document.createElement('meta');
+        meta.name = 'theme-color';
+        meta.content = '#ffffff';
+        document.getElementsByTagName('head')[0].appendChild(meta);
+      }
+    </script>
+    <link rel="stylesheet" type="text/css" href="css/default.css" />
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="css/responsive.css" />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+    <script src="https://unicons.iconscout.com/release/v4.0.0/script/monochrome/bundle.js" />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/solid.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/thinline.css"
+    />
+    <link
+      rel="stylesheet"
+      media="(prefers-color-scheme:light)"
+      href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0/dist/themes/light.css"
+    />
+    <link
+      rel="stylesheet"
+      media="(prefers-color-scheme:dark)"
+      href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0/dist/themes/dark.css"
+      onload="document.documentElement.classList.add('sl-theme-dark');"
+    />
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0/dist/shoelace.js"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/d39bd552a9.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <section class="main-grid">
+      <div class="note-tag-grid">
+        <div class="note-tag-left-sidebar">
+          <div class="note-tag-title">
+            <img src="/images/logo.svg" alt="feather pen logo">
+          </div>
+        <div class="note-tag-main">
+          <div class="all-notes">
+            <img src="/images/icon-home.svg" alt="house icon" />
+            <h2>All Notes</h2>
+            <img src="/images/icon-chevron-right.svg" alt="right arrow" />
+          </div>
+          <div class="archived-notes">
+            <img src="/images/icon-archive.svg" alt="archive icon" />
+            <h2>Archived Notes</h2>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="attribution">
+        Challenge by
+        <a
+          href="https://www.frontendmentor.io?ref=challenge"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Frontend Mentor</a
+        >. Coded by
+        <a href="https://www.frontendmentor.io/profile/chizy21">Greg Perry</a>.
+      </div>
+    </footer>
+    <script src="/js/main.js"></script>
+  </body>
+</html>
